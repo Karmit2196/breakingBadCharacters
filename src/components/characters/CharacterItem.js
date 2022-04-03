@@ -22,6 +22,15 @@ const CharacterItem = ({ item }) => {
             <li>
               <strong>Status:</strong> {item.status}
             </li>
+            <li>
+              <strong>NickName:</strong> {item.nickname}
+            </li>
+            <li>
+              <strong>Occupation:</strong> {item.occupation.join(',')}
+            </li>
+            <li>
+              <strong>Shows:</strong> {item.category}
+            </li>
           </ul>
         </div>
       </div>

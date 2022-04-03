@@ -7,9 +7,12 @@ const CharacterGrid = ({ items, isLoading }) => {
     <Spinner />
   ) : (
     <section className='cards'>
-      {items.map((item) => (
+      {items.length?
+      items.map((item) => (
         <CharacterItem key={item.char_id} item={item}></CharacterItem>
-      ))}
+      )):
+      <div>No data found</div>
+}
     </section>
   )
 }
